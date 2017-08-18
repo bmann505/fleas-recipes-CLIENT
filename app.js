@@ -28,7 +28,8 @@ function signUp(event) {
       if (response.error) {
         alert(response.error)
       } else {
-        location.href = '/'
+        localStorage.setItem('token', response.data)
+        location.href = 'user.html'
       }
     })
 }
@@ -47,7 +48,8 @@ function login(event) {
         alert(response.error);
         location.href = '/'
       } else {
-        location.href = '/'
+        localStorage.setItem('token', response.data)
+        location.href = 'user.html'
       }
     })
 }
