@@ -1,6 +1,8 @@
-const baseURL = 'http://localhost:8080/'
+// const baseURL = 'http://localhost:8080/'
+const baseURL = 'https://dry-atoll-41433.herokuapp.com/'
 const userURL = `${baseURL}users/`
 const recipeURL = `${baseURL}recipes/`
+
 
 $(document).ready(function() {
   const token = localStorage.getItem('token');

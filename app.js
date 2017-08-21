@@ -8,7 +8,8 @@ $(document).ready(function() {
   $loginSbmtBtn.click(login);
 });
 
-const baseURL = 'http://localhost:8080/'
+const baseURL = 'https://dry-atoll-41433.herokuapp.com/'
+// const baseURL = 'http://localhost:8080/'
 const signUpURL = `${baseURL}signup`
 const loginURL = `${baseURL}login`
 
